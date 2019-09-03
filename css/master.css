@@ -1,6 +1,25 @@
 body{
   background-color: #6F2232;
+
 }
+
+header{
+  font-family: 'Ceviche One', cursive;
+  font-size: 1.5rem;
+}
+
 .carousel-inner img {
   margin: auto;
 }
+
+/* para modificar colores y demas del navbar */
+._ni_navbar{
+  background-color:#950740
+}
+
+/* la info de cada prod del carousel */
+._ni_infoCarousel{
+  background-color: rgba(78, 78, 80, 0.8);
+  color: black;
+  font-family: 'Ceviche One', cursive;
+  }
