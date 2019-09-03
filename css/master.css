@@ -1,3 +1,6 @@
 body{
-  background-color: red;
+  background-color: #6F2232;
+}
+.carousel-inner img {
+  margin: auto;
 }
