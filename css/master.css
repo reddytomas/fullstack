@@ -4,24 +4,28 @@ body{
 }
 
 header{
-
   font-size: 1.5rem;
-  background-color: #6F2232;
 }
+
+._perfilList{
+  overflow: hidden;
+  list-style: none;
+
+}
+#iniciar{
+  float: right;
+  margin-right: 10px;
+  }
+
+
 
 .carousel-inner img {
   margin: auto;
 }
 
-/* para modificar colores y demas del navbar */
-._ni_navbar{
-  background-color:#950740
-}
 
 /* la info de cada prod del carousel */
 ._ni_infoCarousel{
   background-color: rgba(78, 78, 80, 0.8);
   color: black;
   }
-
-  

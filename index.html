@@ -22,8 +22,7 @@
   <div class="container-fluid m-0 p-0">
       <header>
         <!-- navbar -------------------------------------->
-        <nav class="navbar navbar-expand-lg navbar-light _ni_navbar">
-          <a class="navbar-brand" href="#">Altas Llantas</a>
+        <nav class="navbar navbar-expand-lg navbar-light _ni_navbar mb-5">
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
           </button>
@@ -32,13 +31,18 @@
           <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
           <a class="nav-item nav-link" href="/Users/tomasreddy/Desktop/TUNA/productos.html">Productos</a>
           <a class="nav-item nav-link" href="#">FAQ</a>
-          <a class="nav-item nav-link" href="#">Registro</a>
           <a class="nav-item nav-link" href="#">Contacto</a>
-          <a class="nav-item nav-link" href="#">Login</a>
-          <a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true"> Mi Perfil</a>
         </div>
         </div>
+
+        <!-- iniciar, registro o mi perfil ----------------------->
+        <ul class="_perfilList">
+        <a class="nav-item nav-link"href="#" id="iniciar"><li><i class="fas fa-user-circle fa-1x"></i></li></a>
+        <a class="nav-item nav-link" href="#" id="iniciar"><li>Registro</li></a>
+        <a class="nav-item nav-link" href="#" id="iniciar"><li>Iniciar sesion</li></a>
+        </ul>
         </nav>
+
       </header>
       <!-- carousel -------------------------------------->
       <section class="vh-80">
@@ -85,7 +89,24 @@
     </section>
 
 <!-- PRODUCTOS ---------------------------------------------->
-    <section class="_articles row">
+    <section class="_articles row p-5">
+      <article class="_article1 col-sm-12 col-md-6 col-lg-4">
+        <img class="d-block w-100"src="IMG/adidas.jpg" alt="adidas">
+        <h4>Adidas</h4>
+        <p>Lorem ipsum dolor sit amet.</p>
+      </article>
+      <article class="_article2 col-sm-12 col-md-6 col-lg-4">
+        <img class="d-block w-100"src="IMG/nike.jpg" alt="nike">
+        <h4>Nike</h4>
+        <p>Lorem ipsum dolor sit amet.</p>
+      </article>
+
+      <article class="_article3 col-sm-12 col-md-6 col-lg-4">
+        <img class="d-block w-100"src="IMG/reebok.jpg" alt="reebok">
+        <h4>Reebok</h4>
+        <p>Lorem ipsum dolor sit amet.</p>
+      </article>
+
       <article class="_article1 col-sm-12 col-md-6 col-lg-4">
         <img class="d-block w-100"src="IMG/adidas.jpg" alt="adidas">
         <h4>Adidas</h4>
@@ -107,7 +128,7 @@
     </section >
 
     <!-- CONTACTO  y maps----------------------------->
-    <section class="_contacto row ">
+    <section class="_contacto row p-3">
       <article class="col-sm-12 col-md-6">
         <form>
           <div class="form-group">
@@ -132,11 +153,12 @@
     <!-- FOOTER con redes y nada mas -->
     <footer class="bg-secondary ">
       <p class="text-center">Altas Llantas</p>
-      <ul class="list-unstyled flex-row">
-        <li><a href=""><i class="fab fa-instagram fa-2x"></i></a></li>
+      <ul class="list-unstyled list-group-horizontal d-flex justify-content-around ">
+        <li><a href=""><i class="fab fa-instagram fa-2x "></i></a></li>
         <li><a href=""><i class="fab fa-facebook-square fa-2x"></i></a></li>
         <li><a href=""><i class="fab fa-twitter-square fa-2x"></i></a></li>
       </ul>
+
     </footer>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
