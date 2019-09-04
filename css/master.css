@@ -1,11 +1,11 @@
 body{
-  background-color: #6F2232;
 
-}
+  }
 
 header{
   font-family: 'Ceviche One', cursive;
   font-size: 1.5rem;
+  background-color: #6F2232;
 }
 
 .carousel-inner img {
@@ -23,3 +23,5 @@ header{
   color: black;
   font-family: 'Ceviche One', cursive;
   }
+
+  /* footer */
