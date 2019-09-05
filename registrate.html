@@ -9,14 +9,15 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- Fuentes y nuestro stylesheet -->
     <link href="https://fonts.googleapis.com/css?family=Ceviche+One|Sedgwick+Ave|Sedgwick+Ave+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css">
+
     <link rel="stylesheet" href="css/master.css">
     <title>registrate</title>
   </head>
   <body>
     <header>
       <!-- navbar -------------------------------------->
-      <nav class="navbar navbar-expand-lg navbar-light _ni_navbar">
-        <a class="navbar-brand" href="#">Altas Llantas</a>
+      <nav class="navbar navbar-expand-lg navbar-light _ni_navbar mb-5">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
         </button>
@@ -25,20 +26,26 @@
         <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
         <a class="nav-item nav-link" href="/Users/tomasreddy/Desktop/TUNA/productos.html">Productos</a>
         <a class="nav-item nav-link" href="#">FAQ</a>
-        <a class="nav-item nav-link" href="#">Registro</a>
         <a class="nav-item nav-link" href="#">Contacto</a>
-        <a class="nav-item nav-link" href="#">Login</a>
-        <a class="nav-item nav-link disabled" href="#" tabindex="-1" aria-disabled="true"> Mi Perfil</a>
       </div>
       </div>
+
+      <!-- iniciar, registro o mi perfil ----------------------->
+      <ul class="_perfilList">
+      <a class="nav-item nav-link"href="#" id="iniciar"><li><i class="fas fa-user-circle fa-1x"></i></li></a>
+      <a class="nav-item nav-link" href="#" id="iniciar"><li>Registro</li></a>
+      <a class="nav-item nav-link" href="#" id="iniciar"><li>Iniciar sesion</li></a>
+      </ul>
       </nav>
+
     </header>
     <main class="container">
-      <h1>Dejanos tus datos</h1>
+      <h1 id="caccount">Create your account</h1>
       <br>
       <br>
-      <form class="" action="index.html" method="post">
-        <label for="donde">De donde sos?</label>
+      <!-- de donde sos? ----------------------->
+      <form class="" action="registrate.html" method="post">
+        <label for="donde">Pais</label>
         <br>
         <select class="" name="donde" id="donde">
 <option value="AR">ARGENTINA</option>
@@ -47,8 +54,66 @@
 <option value="UR">URUGUAY</option>
 <option value="RM">RESTO DE MUNDO</option>
         </select>
-      </form>
+        </form>
+      <!-- edad? ----------------------->
+        <br>
+        <form class="" action="registrate.html" method="post">
+         <p>
+         <label for="edad">Edad</label>
+         <br>
+         <input type="radio" name="edad" value="+18">+18 años
+         <br>
+         <input type="radio" name="edad" value="-18">-18 años
+         </p>
+         </form>
+         <br>
+         <!-- datos de registracion ----------------------->
+        <form class="" action="registrate.html" method="post">
+        <p>
+          <label for="nombre">
+            Nombre
+          </label>
+          <input type="text" name="nombre" value="" required>
+        </p>
+        <p>
+          <label for="apellido">
+            Apellido
+          </label>
+          <input type="text" name="apellido" value="" required>
+        </p>
+        <p>
+          <label for="username">
+            Username
+          </label>
+          <input type="text" name="username" value="tomi420" required>
+        </p>
+        <p>
+          <label for="password">
+            Password
+          </label>
+          <input type="password" name="password" value="" required>
+        </p>
+        <p>
+          <label for="passwordagain">
+            Password again
+          </label>
+          <input type="password" name="passwordagain" value="" required>
+        </p>
+        <button type="button" class="btn btn-success">Enviar</button>
+        </form>
     </main>
+
+    <footer class="bg-secondary " id="footregistro">
+      <p class="text-center">Altas Llantas</p>
+      <ul class="list-unstyled list-group-horizontal d-flex justify-content-around ">
+        <li><a href=""><i class="fab fa-instagram fa-2x "></i></a></li>
+        <li><a href=""><i class="fab fa-facebook-square fa-2x"></i></a></li>
+        <li><a href=""><i class="fab fa-twitter-square fa-2x"></i></a></li>
+      </ul>
+
+    </footer>
+
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
