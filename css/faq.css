@@ -1,1 +1,82 @@
+@import "/Users/tomasreddy/Desktop/TUNA/fullstack/css/faq.css";
+@import "/Users/tomasreddy/Desktop/TUNA/fullstack/css/perfil.css";
+@import "/Users/tomasreddy/Desktop/TUNA/fullstack/css/productos.css";
+@import "/Users/tomasreddy/Desktop/TUNA/fullstack/css/registrate.css";
+@import "/Users/tomasreddy/Desktop/TUNA/fullstack/css/contacto.css"
 
+body{
+
+
+}
+
+header{
+  font-size: 1.5rem;
+}
+
+
+
+._perfilList{
+  overflow: hidden;
+  list-style: none;
+
+}
+#iniciar{
+  float: right;
+  margin-right: 10px;
+  }
+
+
+
+.carousel-inner img {
+  margin: auto;
+}
+
+
+/* la info de cada prod del carousel */
+._ni_infoCarousel{
+  background-color: rgba(78, 78, 80, 0.8);
+  color: black;
+  }
+<<<<<<< HEAD
+._carousel img{
+
+}
+=======
+
+  #footregistro{
+    margin-top: 100px;
+    }
+>>>>>>> 285c098e4894402911bada61f6ecfcf4e820ca78
+
+
+label {
+display:block;
+margin:20px 0 0;
+border-bottom:1px solid green;
+}
+label:hover { text-decoration:underline }
+input {
+position:absolute;
+left:-999em
+}
+.hide {
+width:50%;
+border:1px solid #000;
+background:lightblue;
+max-height:999em;
+opacity:1;
+height:auto;
+overflow:hidden;
+#transition:opacity .5s linear;
+}
+.hide p {
+padding:10px;
+margin:0
+}
+input[type=checkbox]:checked + div {
+opacity:0;
+max-height:0;
+border:none;
+#transition:opacity .5s linear, max-height .5s linear;
+}
+.follow{border-top:1px solid blue;margin:0}
