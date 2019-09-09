@@ -20,6 +20,8 @@ header{
   list-style: none;
 
 }
+
+/* iconos de carro y perfil */
 #iniciar{
   float: right;
   margin-right: 10px;
@@ -39,7 +41,22 @@ header{
   }
 
 
-
   #footregistro{
     margin-top: 100px;
-    }
+}
+
+._producto:hover{
+  border: 1px solid rgb(10, 10, 10);
+}
+
+
+section._articles{
+  margin-top: 100px;
+}
+article a {
+  color:black;
+}
+a:hover{
+  color: black;
+  text-decoration: none;
+}
