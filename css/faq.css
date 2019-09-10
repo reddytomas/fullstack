@@ -80,3 +80,8 @@ border:none;
 #transition:opacity .5s linear, max-height .5s linear;
 }
 .follow{border-top:1px solid blue;margin:0}
+
+._sectionfaq{
+  margin-bottom: 20px;
+  margin-left: 50px;
+}
