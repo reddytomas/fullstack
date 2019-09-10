@@ -1,9 +1,4 @@
-
-
-body{
-
-
-}
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
 
 header{
   font-size: 1.5rem;
@@ -80,4 +75,8 @@ border:none;
 ._sectionfaq{
   margin-bottom: 20px;
   margin-left: 50px;
+}
+#_altasllantasfooter{
+  font-family: 'Sedgwick Ave Display', cursive;
+  font-size: 30px;
 }
