@@ -49,6 +49,7 @@ header{
 
 section._articles{
   margin-top: 50px;
+
 }
 article a {
   color:black;
@@ -61,4 +62,10 @@ a:hover{
 #_altasllantasfooter{
   font-family: 'Sedgwick Ave Display', cursive;
   font-size: 30px;
+}
+#_contactarprimera{
+  background-color: #f8f9fa;
+}
+._contactanosheader{
+  margin-top: 25px;
 }
