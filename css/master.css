@@ -1,13 +1,10 @@
-@import "/Users/tomasreddy/Desktop/TUNA/fullstack/css/faq.css";
-@import "/Users/tomasreddy/Desktop/TUNA/fullstack/css/perfil.css";
-@import "/Users/tomasreddy/Desktop/TUNA/fullstack/css/productos.css";
-@import "/Users/tomasreddy/Desktop/TUNA/fullstack/css/registrate.css";
-@import "/Users/tomasreddy/Desktop/TUNA/fullstack/css/contacto.css"
+@import "css/faq.css";
+@import "css/perfil.css";
+@import "css/productos.css";
+@import "css/registrate.css";
+@import "css/contacto.css";
+@import "css/carritodecompras.css";
 
-body{
-
-
-}
 
 header{
   font-size: 1.5rem;
@@ -51,7 +48,8 @@ header{
 
 
 section._articles{
-  margin-top: 170px;
+  margin-top: 50px;
+
 }
 article a {
   color:black;
@@ -61,7 +59,13 @@ a:hover{
   text-decoration: none;
 }
 
-
-h1{
-  background-color: rgb(106, 255, 251);
+#_altasllantasfooter{
+  font-family: 'Sedgwick Ave Display', cursive;
+  font-size: 30px;
+}
+#_contactarprimera{
+  background-color: #f8f9fa;
+}
+._contactanosheader{
+  margin-top: 25px;
 }
