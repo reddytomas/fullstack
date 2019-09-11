@@ -40,10 +40,13 @@ header{
 >>>>>>> 285c098e4894402911bada61f6ecfcf4e820ca78
 
 
+
+
 label {
 display:block;
+font-family: 'Sedgwick Ave Display', cursive;
 margin:20px 0 0;
-border-bottom:1px solid green;
+border-bottom:1px solid red;
 }
 label:hover { text-decoration:underline }
 input {
@@ -52,8 +55,9 @@ left:-999em
 }
 .hide {
 width:50%;
+font-family: 'Sedgwick Ave Display', cursive;
 border:1px solid #000;
-background:lightblue;
+background: rgb(246, 7, 94);
 max-height:999em;
 opacity:1;
 height:auto;
@@ -73,10 +77,20 @@ border:none;
 .follow{border-top:1px solid blue;margin:0}
 
 ._sectionfaq{
+  font-family: 'Sedgwick Ave Display', cursive;
+  color: black;
+  font-size: 30px;
   margin-bottom: 20px;
-  margin-left: 50px;
+  margin-left: 200px;
 }
 #_altasllantasfooter{
   font-family: 'Sedgwick Ave Display', cursive;
   font-size: 30px;
+}
+._preguntasfrecuentes {
+  font-family: 'Sedgwick Ave Display', cursive;
+}
+
+p {
+  font-family: 'Lacquer', sans-serif;
 }
