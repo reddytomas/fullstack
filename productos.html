@@ -12,13 +12,14 @@
 
     <!-- Fuentes y nuestro stylesheet -->
     <link href="https://fonts.googleapis.com/css?family=Ceviche+One|Sedgwick+Ave|Sedgwick+Ave+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Playfair+Display|Raleway|Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css">
 
     <link rel="stylesheet" href="css/master.css">
-    <title>Productos</title>
+    <title>Carrito</title>
   </head>
 
-  <body>
+<body>
   <div class="container-fluid m-0 p-0">
     <header>
       <!-- navbar -------------------------------------->
@@ -26,14 +27,16 @@
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
           </button>
+
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav ">
-          <a class="nav-item nav-link active" href="index.html">Home <span class="sr-only">(current)</span></a>
+        <div class="navbar-nav d-flex justify-content-around">
+          <a href="index.html"  class="text-dark mr-3" id="_altasllantasfooter">Altas Llantas</a>
+          <a class="nav-item nav-link " href="index.html">Home <span class="sr-only">(current)</span></a>
           <a class="nav-item nav-link" href="productos.html">Productos</a>
           <a class="nav-item nav-link" href="faq.html">FAQ</a>
           <a class="nav-item nav-link" href="contacto.html">Contacto</a>
-          <a class="nav-item nav-link" href="registrate.html">Registro</a>
-          <a class="nav-item nav-link" href="#">Iniciar sesion</a>
+          <a class="nav-item nav-link" href="registrate.html">Registrate</a>
+          <a class="nav-item nav-link" href="registrate.html">Iniciar sesion</a>
         </div>
 
         </div>
@@ -41,11 +44,12 @@
         <!-- iniciar, registro o mi perfil ----------------------->
         <ul class="_perfilList">
           <a class="nav-item nav-link"href="perfil.html" id="iniciar"><li><i class="fas fa-user-circle fa-1x"></i></li></a>
-          <a class="btn btn-primary btn-lg" href="carritodecompras.html" role="button"><i class="fas fa-shopping-cart"></i></a>
+          <a class="btn btn-primary btn-lg" href="carritodecompras.html" role="button"><li><i class="fas fa-shopping-cart"></i></li></a>
+
         </ul>
       </nav>
 
-      </header>
+    </header>
 
 
     <section class="_section1productos">
@@ -57,15 +61,16 @@
 
 
 
-      <footer class="bg-light ">
-        <p class="text-center" id="_altasllantasfooter">Altas Llantas</p>
-        <ul class="list-unstyled list-group-horizontal d-flex justify-content-around ">
-          <li><a href=""><i class="fab fa-instagram fa-2x "></i></a></li>
-          <li><a href=""><i class="fab fa-facebook-square fa-2x"></i></a></li>
-          <li><a href=""><i class="fab fa-twitter-square fa-2x"></i></a></li>
-        </ul>
+    <!-- FOOTER con redes y nada mas -->
+    <footer class="bg-light w-100">
+      <p class="text-center" id="_altasllantasfooter">Altas Llantas</p>
+      <ul class="list-unstyled list-group-horizontal d-flex justify-content-around ">
+        <li><a href=""><i class="fab fa-instagram fa-2x "></i></a></li>
+        <li><a href=""><i class="fab fa-facebook-square fa-2x"></i></a></li>
+        <li><a href=""><i class="fab fa-twitter-square fa-2x"></i></a></li>
+      </ul>
 
-      </footer>
+    </footer>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
