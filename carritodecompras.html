@@ -12,6 +12,7 @@
 
     <!-- Fuentes y nuestro stylesheet -->
     <link href="https://fonts.googleapis.com/css?family=Ceviche+One|Sedgwick+Ave|Sedgwick+Ave+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Playfair+Display|Raleway|Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css">
 
     <link rel="stylesheet" href="css/master.css">
@@ -48,56 +49,73 @@
       </nav>
 
     </header>
-      <h1 class="_headercarrito  text-dark pl-3 mb-3  text-center">Carrito de Compras</h1>
-
-      <ul class="list-group list-group-flush">
-        <li class="list-group-item  w-90">
-          <a href=""><i class="fas fa-window-close float-right fa-2x"></i></a>
-          <img class="float-left" src="IMG/basquet.png" alt="basquet">
-          <h3 class="">Nike Basquet</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In tenetur temporibus nisi consequatur, consequuntur commodi. Expedita id nulla eius aperiam distinctio, molestiae velit sit ratione exercitationem officia, quaerat rerum mollitia?</p>
-          <h5>Precio: $3000</h5>
-          <select class="custom-select _cantidad">
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-          </select>
-          <select class="custom-select _talle">
-            <option value="1">US 9</option>
-            <option value="2">US 10</option>
-            <option value="3">US 11</option>
-          </select>
-
-        </li>
-
-        <li class="list-group-item  w-90">
-          <a href=""><i class="fas fa-window-close float-right fa-2x"></i></a>
-          <img class="float-left " src="IMG/BS5991_0.jpg" width="225" alt="basquet">
-          <h3 class="">Adidas Running</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In tenetur temporibus nisi consequatur, consequuntur commodi. Expedita id nulla eius aperiam distinctio, molestiae velit sit ratione exercitationem officia, quaerat rerum mollitia?</p>
-          <h5>Precio: $3000</h5>
-          <select class="custom-select _cantidad">
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-          </select>
-          <select class="custom-select _talle">
-            <option value="1">US 9</option>
-            <option value="2">US 10</option>
-            <option value="3">US 11</option>
-          </select>
-
-        </li>
-
-      </ul>
-      <div class="d-flex justify-content-center mb-3 mt-3">
-        <button type="button" class="btn btn-primary w-75 t-center ">Me llevo todo!  <br><i class="fas fa-money-check-alt fa-2x"></i></button>
+      <div><h1 class="_headercarrito ml-1 mr-1  bg-light text-dark pl-3 mb-3  text-center">Carrito de Compras</h1>
       </div>
+      <section class="row">
+        <article class="col-sm-12 col-md-8">
+          <ul class="list-group list-group-flush w-100 ml-2 ">
+            <li class="_comprasList list-group-item  w-90">
+              <a href=""><i class="fas fa-window-close float-right fa-2x"></i></a>
+              <img class="float-left mr-3 " src="IMG/basquet.png" alt="basquet">
+              <h3 class="_comprasList">Nike Basquet</h3>
+              <p class="_comprasList">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In tenetur temporibus nisi consequatur, consequuntur commodi. Expedita id nulla eius aperiam distinctio, molestiae velit sit ratione exercitationem officia, quaerat rerum mollitia?</p>
+              <h5 class="_comprasList">Precio: $3000</h5>
+              <select class="custom-select _comprasList">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+              </select>
+              <select class="custom-select  _comprasList">
+                <option value="1">US 9</option>
+                <option value="2">US 10</option>
+                <option value="3">US 11</option>
+              </select>
 
+            </li>
+
+            <li class="list-group-item   ">
+              <a href=""><i class="fas fa-window-close float-right fa-2x"></i></a>
+              <img class="float-left mr-3" src="IMG/BS5991_0.jpg" width="225" alt="basquet">
+              <h3 class="_comprasList">Adidas Running</h3>
+              <p class="_comprasList">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In tenetur temporibus nisi consequatur, consequuntur commodi. Expedita id nulla eius aperiam distinctio, molestiae velit sit ratione exercitationem officia, quaerat rerum mollitia?</p>
+              <h5 class="_comprasList">Precio: $3000</h5>
+              <!-- cantidad -->
+              <select class="custom-select">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+              </select>
+              <!-- talle -->
+              <select class="custom-select _comprasList">
+                <option value="1">US 9</option>
+                <option value="2">US 10</option>
+                <option value="3">US 11</option>
+              </select>
+
+            </li>
+          </ul>
+        </article>
+        <article class="col-sm-12 col-md-4">
+          <section class="row text-center rounded-top _resumen  _comprasList ml-5 mt-1 mb-1">
+            <article class="col-sm-12 " id="resumenProductos">
+              <h4>Resumen</h4>
+              <ul class="text-left">
+                <li>1x Nike Basquet = $3000</li>
+                <li>1x Adidas Running = $3000</li>
+              </ul>
+            </article>
+            <article class="col-sm-12 " id="totalCompra">
+              <h4>Total:</h4>
+              <h3>$6000</h3>
+              <button type="button" class="btn btn-primary w-50 t-center ">Pagar<br><i class="fas fa-money-check-alt fa-2x"></i></button>
+
+            </article>
+          </section>
+        </article>
 
 
     <!-- FOOTER con redes y nada mas -->
-    <footer class="bg-light ">
+    <footer class="bg-light w-100">
       <p class="text-center" id="_altasllantasfooter">Altas Llantas</p>
       <ul class="list-unstyled list-group-horizontal d-flex justify-content-around ">
         <li><a href=""><i class="fab fa-instagram fa-2x "></i></a></li>
