@@ -1,54 +1,27 @@
-
-@import "index.css";
-
-/* HEADER */
+/* HEADER ------------------------------------*/
 .nav-item{
   font-family: 'Montserrat', sans-serif;
   font-size: 1.2rem;
 }
+
 ._perfilList{
   overflow: hidden;
   list-style: none;
 
 }
-  /* HEADER - iconos de carro y perfil */
   #iniciar{
     float: right;
     margin-right: 10px;
     }
 
 
-
-.carousel-inner img {
-  margin: auto;
-}
-
-
-/* la info de cada prod del carousel */
-._ni_infoCarousel{
-  background-color: rgba(78, 78, 80, 0.8);
-  color: black;
-  }
-
-
+/* FOOTER ---------------------------------*/
 #footregistro{
     margin-top: 100px;
 }
-
-._producto:hover{
-  border: 1px solid rgb(10, 10, 10);
-}
-
-
 
 
 #_altasllantasfooter{
   font-family: 'Sedgwick Ave Display', cursive;
   font-size: 30px;
-}
-#_contactarprimera{
-  background-color: #f8f9fa;
-}
-._contactanosheader{
-  margin-top: 25px;
 }

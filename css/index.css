@@ -1,27 +1,6 @@
 @import "master.css";
 
 
-header{
-  font-size: 1.5rem;
-
-}
-p {
-  font-family: 'Lacquer', sans-serif;
-}
-
-
-._perfilList{
-  overflow: hidden;
-  list-style: none;
-
-}
-
-/* iconos de carro y perfil */
-#iniciar{
-  float: right;
-  margin-right: 10px;
-  }
-
 
 
 .carousel-inner img {
@@ -36,12 +15,10 @@ p {
   }
 
 
-  #footregistro{
-    margin-top: 100px;
-}
+
 
 ._producto:hover{
-  border: 1px solid rgb(10, 10, 10);
+  border: 2px solid grey;
 }
 
 
@@ -57,19 +34,14 @@ a:hover{
   text-decoration: none;
 }
 
-#_altasllantasfooter{
-  font-family: 'Sedgwick Ave Display', cursive;
-  font-size: 30px;
-}
+/* CONTACTANOS */
 #_contactarprimera{
   background-color: #f8f9fa;
 }
 ._contactanosheader{
   margin-top: 25px;
 }
-h4  {
-  font-family: 'Sedgwick Ave Display', cursive;
-}
+
 
 h1  {
   font-family: 'Sedgwick Ave Display', cursive;
