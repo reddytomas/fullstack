@@ -7,47 +7,13 @@ header{
 
 
 
-._perfilList{
-  overflow: hidden;
-  list-style: none;
-
-}
-#iniciar{
-  float: right;
-  margin-right: 10px;
-  }
-
-
-
-.carousel-inner img {
-  margin: auto;
-}
-
-
-/* la info de cada prod del carousel */
-._ni_infoCarousel{
-  background-color: rgba(78, 78, 80, 0.8);
-  color: black;
-  }
-<<<<<<< HEAD
-._carousel img{
-
-}
-=======
-
-  #footregistro{
-    margin-top: 100px;
-    }
->>>>>>> 285c098e4894402911bada61f6ecfcf4e820ca78
-
-
 
 
 label {
 display:block;
 font-family: 'Sedgwick Ave Display', cursive;
 margin:20px 0 0;
-border-bottom:1px solid red;
+
 }
 label:hover { text-decoration:underline }
 input {
