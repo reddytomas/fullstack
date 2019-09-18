@@ -3,13 +3,12 @@ font-family: 'Montserrat', sans-serif;GENIAL
 font-family: 'Raleway', sans-serif;
 font-family: 'Sedgwick Ave Display', cursive; */
 /*botones de talle y cant  */
+@import "master.css";
+
 .custom-select{
   width: 10%;
 }
 
-._headercarrito{
-  font-family: 'Montserrat', sans-serif;
-}
 
 ._resumen{
   background-color: grey;
