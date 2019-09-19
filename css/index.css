@@ -8,15 +8,6 @@
 }
 
 
-/* la info de cada prod del carousel */
-._ni_infoCarousel{
-  background-color: rgba(78, 78, 80, 0.8);
-  color: black;
-  }
-
-
-
-
 ._producto:hover{
   border: 2px solid grey;
 }
