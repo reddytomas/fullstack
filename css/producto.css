@@ -1,13 +1,5 @@
 @import "master.css";
 
-._headerNike{
-  padding-left: 10px;
-}
-._parrafoNike{
-  padding-left: 10px;
-}
-body{
-}
-.adidasproductos{
-  padding-left: 250px;
+.custom-select{
+  width: 20%;
 }
