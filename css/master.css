@@ -31,12 +31,16 @@ a:hover{
   font-family: 'Sedgwick Ave Display', cursive;
   font-size: 30px;
 }
+#volverArriba{
+  font-size: 0.85rem;
+
+}
 
 /* GENERALES--------------------------- */
 ._tituloPagina{
   font-family:  'Sedgwick Ave Display', cursive;
 }
 
-b, p, a, form, button{
+b, p, a, form, button, h4, h5, h6{
   font-family: 'Montserrat', sans-serif;
 }
