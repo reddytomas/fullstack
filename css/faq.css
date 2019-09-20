@@ -21,7 +21,7 @@ position:absolute;
 left:-999em
 }
 .hide {
-width:50%;
+width:80%;
 font-family: 'Sedgwick Ave Display', cursive;
 border:1px solid #000;
 background: rgb(246, 7, 94);
@@ -48,7 +48,7 @@ border:none;
   color: black;
   font-size: 30px;
   margin-bottom: 20px;
-  margin-left: 200px;
+  margin-left: 20px;
 }
 #_altasllantasfooter{
   font-family: 'Sedgwick Ave Display', cursive;
