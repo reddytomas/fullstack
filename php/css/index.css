@@ -1,0 +1,45 @@
+@import "master.css";
+
+
+
+/* carousel y SECTION ------------ */
+h1  {
+  font-family: 'Sedgwick Ave Display', cursive;
+}
+.carousel-inner img {
+  margin: auto;
+}
+
+
+._producto:hover{
+  border: 2px solid grey;
+}
+
+
+section._articles{
+  margin-top: 0px;
+
+}
+article a {
+  color:black;
+}
+a:hover{
+  color: black;
+  text-decoration: none;
+}
+
+
+.row{
+  margin-left: 0;
+  margin-right: 0;
+}
+/* CONTACTANOS */
+#_contactarprimera{
+  background-color: #f8f9fa;
+  margin-bottom: 0.5em;
+}
+._contactanosheader{
+  margin-top: 25px;
+  font-weight: bold;
+
+}

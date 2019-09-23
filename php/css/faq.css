@@ -1,0 +1,63 @@
+@import "master.css";
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+header{
+  font-size: 1.5rem;
+}
+
+
+
+
+
+label {
+display:block;
+font-family: 'Sedgwick Ave Display', cursive;
+margin:20px 0 0;
+
+}
+label:hover { text-decoration:underline }
+input {
+position:absolute;
+left:-999em
+}
+.hide {
+width:80%;
+font-family: 'Sedgwick Ave Display', cursive;
+border:1px solid #000;
+background: rgb(246, 7, 94);
+max-height:999em;
+opacity:1;
+height:auto;
+overflow:hidden;
+#transition:opacity .5s linear;
+}
+.hide p {
+padding:10px;
+margin:0
+}
+input[type=checkbox]:checked + div {
+opacity:0;
+max-height:0;
+border:none;
+#transition:opacity .5s linear, max-height .5s linear;
+}
+.follow{border-top:1px solid blue;margin:0}
+
+._sectionfaq{
+  font-family: 'Sedgwick Ave Display', cursive;
+  color: black;
+  font-size: 30px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+#_altasllantasfooter{
+  font-family: 'Sedgwick Ave Display', cursive;
+  font-size: 30px;
+}
+._preguntasfrecuentes {
+  font-family: 'Sedgwick Ave Display', cursive;
+}
+
+p {
+  font-family: 'Lacquer', sans-serif;
+}

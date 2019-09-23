@@ -1,0 +1,46 @@
+/* HEADER ------------------------------------*/
+a:hover{
+  color: black;
+  text-decoration: none;
+}
+.nav-item{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2rem;
+}
+
+._perfilList{
+  overflow: hidden;
+  list-style: none;
+  padding-inline-start: 0px;
+}
+  #iniciar{
+    float: right;
+    margin-right: 10px;
+}
+
+#carrito{
+  border-radius: 50%;
+}
+/* FOOTER ---------------------------------*/
+#footregistro{
+    margin-top: 100px;
+}
+
+
+#_altasllantasfooter{
+  font-family: 'Sedgwick Ave Display', cursive;
+  font-size: 30px;
+}
+#volverArriba{
+  font-size: 0.85rem;
+
+}
+
+/* GENERALES--------------------------- */
+._tituloPagina{
+  font-family:  'Sedgwick Ave Display', cursive;
+}
+
+b, p, a, form, button, h4, h5, h6{
+  font-family: 'Montserrat', sans-serif;
+}
