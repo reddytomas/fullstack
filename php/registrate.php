@@ -1,3 +1,21 @@
+<?php
+
+  require_once("controladores/funciones.php");
+  require_once("helpers.php");
+  if($_POST){
+
+    $errores = validar($_POST);
+   if(count($errores)==0){
+     $registro = armarRegistro($_POST);
+     guardarRegistro($registro);
+
+
+     header("location:login.php");
+   }
+  }
+?>
+
+
 <!doctype html>
 <html lang="es">
   <head>
@@ -57,58 +75,42 @@
       <br>
       <!-- de donde sos? ----------------------->
       <form class="" action="index.html" method="post">
-        <label for="donde">Pais</label>
-        <br>
-        <select class="" name="donde" id="donde">
-<option value="AR">ARGENTINA</option>
-<option value="BR">BRASIL</option>
-<option value="CH">CHILE</option>
-<option value="UR">URUGUAY</option>
-<option value="RM">RESTO DE MUNDO</option>
-        </select>
-        <br>
-        <p>
-        <label for="edad">Edad</label>
-        <br>
-        <input type="radio" name="edad" value="+18">+18 años
-        <br>
-        <input type="radio" name="edad" value="-18">-18 años
-        </p>
+
         <p>
           <label for="nombre">
             Nombre:
           </label>
-          <input type="text" name="nombre" value="" required>
+          <input type="text" required name="nombre" value="" required>
         </p>
         <p>
           <label for="apellido">
             Apellido:
           </label>
-          <input type="text" name="apellido" value="" required>
+          <input type="text" required name="apellido" value="" required>
         </p>
         <p>
           <label for="email">
             Email:
           </label>
-          <input type="email" name="email" value="" required>
+          <input type="email" required name="email" value="" required>
         </p>
         <p>
-          <label for="username">
+          <label for="userName">
             Username:
           </label>
-          <input type="text" name="username" value="tomi420" required>
+          <input type="text" required name="userName" value="tomi420" required>
         </p>
         <p>
           <label for="password">
             Password:
           </label>
-          <input type="password" name="password" value="" required>
+          <input type="password" required name="password" value="" required>
         </p>
         <p>
           <label for="passwordagain">
             Password again:
           </label>
-          <input type="password" name="passwordagain" value="" required>
+          <input type="password" required name="passwordagain" value="" required>
         </p>
         <button type="button" class="btn btn-success">Crear Cuenta</button>
 
