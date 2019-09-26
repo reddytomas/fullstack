@@ -1,3 +1,5 @@
+
+
 <!doctype html>
 <html lang="es">
   <head>
@@ -15,7 +17,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Playfair+Display|Raleway|Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css">
 
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="../css/index.css">
     <title>Altas LLantas</title>
   </head>
 
@@ -30,21 +32,21 @@
 
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav d-flex justify-content-around">
-          <a href="index.html"  class="text-dark mr-3" id="_altasllantasfooter">Altas Llantas</a>
-          <a class="nav-item nav-link " href="index.html">Home <span class="sr-only">(current)</span></a>
+          <a href="index1.php"  class="text-dark mr-3" id="_altasllantasfooter">Altas Llantas</a>
+          <a class="nav-item nav-link " href="index1.php">Home <span class="sr-only">(current)</span></a>
           <a class="nav-item nav-link" href="#productos">Productos</a>
-          <a class="nav-item nav-link" href="faq.html">FAQ</a>
+          <a class="nav-item nav-link" href="faq.php">FAQ</a>
           <a class="nav-item nav-link" href="#contacto">Contacto</a>
-          <a class="nav-item nav-link" href="registrate.html">Registrate</a>
-          <a class="nav-item nav-link" href="login.html">Iniciar sesion</a>
+          <a class="nav-item nav-link" href="registrate.php">Registrate</a>
+          <a class="nav-item nav-link" href="login.php">Iniciar sesion</a>
         </div>
 
         </div>
 
         <!-- iniciar, registro o mi perfil ----------------------->
         <ul class="_perfilList">
-          <a class="nav-item nav-link"href="perfil.html" id="iniciar"><li><i class="fas fa-user-circle fa-2x"></i></li></a>
-          <a class="btn btn-primary btn-lg" href="carritodecompras.html" role="button"><li><i class="fas fa-shopping-cart"></i></li></a>
+          <a class="nav-item nav-link"href="perfil.php" id="iniciar"><li><i class="fas fa-user-circle fa-2x"></i></li></a>
+          <a class="btn btn-primary btn-lg" href="carritodecompras.php" role="button"><li><i class="fas fa-shopping-cart"></i></li></a>
 
         </ul>
       </nav>
@@ -62,13 +64,13 @@
       </ol>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="IMG/adidas.jpg" class="d-block w-100" alt="...">
+          <img src="../IMG/adidas.jpg" class="d-block w-100" alt="...">
         </div>
         <div class="carousel-item">
-          <img src="IMG/reebok.jpg" class="d-block w-100 " alt="...">
+          <img src="../IMG/reebok.jpg" class="d-block w-100 " alt="...">
         </div>
         <div class="carousel-item">
-          <img src="IMG/nike.jpg" class="d-block w-100" alt="...">
+          <img src="../IMG/nike.jpg" class="d-block w-100" alt="...">
         </div>
       </div>
       <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
@@ -88,142 +90,142 @@
     <section class="_articles row p-3 mt-10 mr-0 ml-0" id="productos">
 
       <article class="_producto col-sm-6 col-md-3 col-lg-2">
-      <a href="producto.html">
-        <img class="d-block w-100"src="IMG/azules.png" alt="adidas">
+      <a href="producto.php">
+        <img class="d-block w-100"src="../IMG/azules.png" alt="adidas">
         <h4><strong>Adidas</strong></h4>
         <p>Lorem ipsum dolor sit amet.</p>
       </a>
       </article>
 
       <article class="_producto col-sm-6 col-md-3 col-lg-2">
-      <a href="producto.html">
-        <img class="d-block w-100"src="IMG/basquet.png" alt="nike">
+      <a href="producto.php">
+        <img class="d-block w-100"src="../IMG/basquet.png" alt="nike">
         <h4><strong>Nike</strong></h4>
         <p>Lorem ipsum dolor sit amet.</p>
       </a>
       </article>
 
       <article class="_producto col-sm-6 col-md-3 col-lg-2">
-      <a href="producto.html" >
-        <img class="d-block w-100"src="IMG/fila.png" alt="reebok">
+      <a href="producto.php" >
+        <img class="d-block w-100"src="../IMG/fila.png" alt="reebok">
         <h4><strong>Reebok</strong></h4>
         <p>Lorem ipsum dolor sit amet.</p>
       </a>
       </article>
 
       <article class="_producto col-sm-6 col-md-3 col-lg-2">
-      <a href="producto.html">
-        <img class="d-block w-100"src="IMG/gris.png" alt="adidas">
+      <a href="producto.php">
+        <img class="d-block w-100"src="../IMG/gris.png" alt="adidas">
         <h4 class="color:black"><strong>Adidas</strong></h4>
         <p>Lorem ipsum dolor sit amet.</p>
       </a>
       </article>
 
       <article class="_producto col-sm-6 col-md-3 col-lg-2">
-      <a href="producto.html">
-        <img class="d-block w-100"src="IMG/vans.png" alt="nike">
+      <a href="producto.php">
+        <img class="d-block w-100"src="../IMG/vans.png" alt="nike">
         <h4><strong>Nike</strong></h4>
         <p>Lorem ipsum dolor sit amet.</p>
       </a>
       </article>
 
       <article class="_producto col-sm-6 col-md-3 col-lg-2">
-      <a href="producto.html">
-        <img class="d-block w-100"src="IMG/swish.png" alt="reebok">
+      <a href="producto.php">
+        <img class="d-block w-100"src="../IMG/swish.png" alt="reebok">
         <h4><strong>Reebok</strong></h4>
         <p>Lorem ipsum dolor sit amet.</p>
       </a>
       </article>
       <article class="_producto col-sm-6 col-md-3 col-lg-2">
-      <a href="producto.html">
-        <img class="d-block w-100"src="IMG/fila.png" alt="adidas">
+      <a href="producto.php">
+        <img class="d-block w-100"src="../IMG/fila.png" alt="adidas">
         <h4><strong>Adidas</strong></h4>
         <p>Lorem ipsum dolor sit amet.</p>
       </a>
       </article>
 
       <article class="_producto col-sm-6 col-md-3 col-lg-2">
-      <a href="producto.html">
-        <img class="d-block w-100"src="IMG/vans.png" alt="nike">
+      <a href="producto.php">
+        <img class="d-block w-100"src="../IMG/vans.png" alt="nike">
         <h4><strong>Nike</strong></h4>
         <p>Lorem ipsum dolor sit amet.</p>
       </a>
       </article>
 
       <article class="_producto col-sm-6 col-md-3 col-lg-2">
-      <a href="producto.html" >
-        <img class="d-block w-100"src="IMG/fila.png" alt="reebok">
+      <a href="producto.php" >
+        <img class="d-block w-100"src="../IMG/fila.png" alt="reebok">
         <h4><strong>Reebok</strong></h4>
         <p>Lorem ipsum dolor sit amet.</p>
       </a>
       </article>
 
       <article class="_producto col-sm-6 col-md-3 col-lg-2">
-      <a href="producto.html">
-        <img class="d-block w-100"src="IMG/swish.png" alt="adidas">
+      <a href="producto.php">
+        <img class="d-block w-100"src="../IMG/swish.png" alt="adidas">
         <h4 class="color:black"><strong>Adidas</strong></h4>
         <p>Lorem ipsum dolor sit amet.</p>
       </a>
       </article>
 
       <article class="_producto col-sm-6 col-md-3 col-lg-2">
-      <a href="producto.html">
-        <img class="d-block w-100"src="IMG/basquet.png" alt="nike">
+      <a href="producto.php">
+        <img class="d-block w-100"src="../IMG/basquet.png" alt="nike">
         <h4><strong>Nike</strong></h4>
         <p>Lorem ipsum dolor sit amet.</p>
       </a>
       </article>
 
       <article class="_producto col-sm-6 col-md-3 col-lg-2">
-      <a href="producto.html">
-        <img class="d-block w-100"src="IMG/swish.png" alt="reebok">
+      <a href="producto.php">
+        <img class="d-block w-100"src="../IMG/swish.png" alt="reebok">
         <h4><strong>Reebok</strong></h4>
         <p>Lorem ipsum dolor sit amet.</p>
       </a>
       </article>
       <article class="_producto col-sm-6 col-md-3 col-lg-2">
-      <a href="producto.html">
-        <img class="d-block w-100"src="IMG/vans.png" alt="adidas">
+      <a href="producto.php">
+        <img class="d-block w-100"src="../IMG/vans.png" alt="adidas">
         <h4><strong>Adidas</strong></h4>
         <p>Lorem ipsum dolor sit amet.</p>
       </a>
       </article>
 
       <article class="_producto col-sm-6 col-md-3 col-lg-2">
-      <a href="producto.html">
-        <img class="d-block w-100"src="IMG/basquet.png" alt="nike">
+      <a href="producto.php">
+        <img class="d-block w-100"src="../IMG/basquet.png" alt="nike">
         <h4><strong>Nike</strong></h4>
         <p>Lorem ipsum dolor sit amet.</p>
       </a>
       </article>
 
       <article class="_producto col-sm-6 col-md-3 col-lg-2">
-      <a href="producto.html" >
-        <img class="d-block w-100"src="IMG/azules.png" alt="reebok">
+      <a href="producto.php" >
+        <img class="d-block w-100"src="../IMG/azules.png" alt="reebok">
         <h4><strong>Reebok</strong></h4>
         <p>Lorem ipsum dolor sit amet.</p>
       </a>
       </article>
 
       <article class="_producto col-sm-6 col-md-3 col-lg-2">
-      <a href="producto.html">
-        <img class="d-block w-100"src="IMG/gris.png" alt="adidas">
+      <a href="producto.php">
+        <img class="d-block w-100"src="../IMG/gris.png" alt="adidas">
         <h4 class="color:black"><strong>Adidas</strong></h4>
         <p>Lorem ipsum dolor sit amet.</p>
       </a>
       </article>
 
       <article class="_producto col-sm-6 col-md-3 col-lg-2">
-      <a href="producto.html">
-        <img class="d-block w-100"src="IMG/swish.png" alt="nike">
+      <a href="producto.php">
+        <img class="d-block w-100"src="../IMG/swish.png" alt="nike">
         <h4><strong>Nike</strong></h4>
         <p>Lorem ipsum dolor sit amet.</p>
       </a>
       </article>
 
       <article class="_producto col-sm-6 col-md-3 col-lg-2">
-      <a href="producto.html">
-        <img class="d-block w-100"src="IMG/vans.png" alt="reebok">
+      <a href="producto.php">
+        <img class="d-block w-100"src="../IMG/vans.png" alt="reebok">
         <h4><strong>Reebok</strong></h4>
         <p>Lorem ipsum dolor sit amet.</p>
       </a>

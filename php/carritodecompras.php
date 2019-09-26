@@ -15,7 +15,7 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Playfair+Display|Raleway|Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css">
 
-    <link rel="stylesheet" href="css/carritodecompras.css">
+    <link rel="stylesheet" href="../css/carritodecompras.css">
     <title>Carrito</title>
   </head>
 
@@ -30,21 +30,21 @@
 
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav d-flex justify-content-around">
-          <a href="index.html"  class="text-dark mr-3" id="_altasllantasfooter">Altas Llantas</a>
-          <a class="nav-item nav-link " href="index.html">Home <span class="sr-only">(current)</span></a>
-          <a class="nav-item nav-link" href="index.html#productos">Productos</a>
-          <a class="nav-item nav-link" href="faq.html">FAQ</a>
-          <a class="nav-item nav-link" href="index.html#contacto">Contacto</a>
-          <a class="nav-item nav-link" href="registrate.html">Registrate</a>
-          <a class="nav-item nav-link" href="login.html">Iniciar sesion</a>
+          <a href="index1.php"  class="text-dark mr-3" id="_altasllantasfooter">Altas Llantas</a>
+          <a class="nav-item nav-link " href="index1.php">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link" href="index1.php#productos">Productos</a>
+          <a class="nav-item nav-link" href="faq.php">FAQ</a>
+          <a class="nav-item nav-link" href="index1.php#contacto">Contacto</a>
+          <a class="nav-item nav-link" href="registrate.php">Registrate</a>
+          <a class="nav-item nav-link" href="login.php">Iniciar sesion</a>
         </div>
 
         </div>
 
         <!-- iniciar, registro o mi perfil ----------------------->
         <ul class="_perfilList">
-          <a class="nav-item nav-link"href="perfil.html" id="iniciar"><li><i class="fas fa-user-circle fa-2x"></i></li></a>
-          <a class="btn btn-primary btn-lg" href="carritodecompras.html" role="button"><li><i class="fas fa-shopping-cart"></i></li></a>
+          <a class="nav-item nav-link"href="perfil.php" id="iniciar"><li><i class="fas fa-user-circle fa-2x"></i></li></a>
+          <a class="btn btn-primary btn-lg" href="carritodecompras.php" role="button"><li><i class="fas fa-shopping-cart"></i></li></a>
 
         </ul>
       </nav>
@@ -57,7 +57,7 @@
           <ul class="list-group list-group-flush w-100 ml-2 ">
             <li class=" list-group-item  w-90">
               <a href=""><i class="fas fa-window-close float-right fa-2x"></i></a>
-              <img class="float-left mr-3 " src="IMG/basquet.png" alt="basquet">
+              <img class="float-left mr-3 " src="../IMG/basquet.png" alt="basquet">
               <h3 class="d-inline-block">Nike Basquet</h3>
               <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In tenetur temporibus nisi consequatur, consequuntur commodi. Expedita id nulla eius aperiam distinctio, molestiae velit sit ratione exercitationem officia, quaerat rerum mollitia?</p>
               <h5 class="">Precio: $3000</h5>
@@ -76,7 +76,7 @@
 
             <li class="list-group-item   ">
               <a href=""><i class="fas fa-window-close float-right fa-2x"></i></a>
-              <img class="float-left mr-3" src="IMG/BS5991_0.jpg" width="225" alt="basquet">
+              <img class="float-left mr-3" src="../IMG/BS5991_0.jpg" width="225" alt="basquet">
               <h3 class="d-inline-block">Adidas Running</h3>
               <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In tenetur temporibus nisi consequatur, consequuntur commodi. Expedita id nulla eius aperiam distinctio, molestiae velit sit ratione exercitationem officia, quaerat rerum mollitia?</p>
               <h5 class="">Precio: $3000</h5>
