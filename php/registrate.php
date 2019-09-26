@@ -73,49 +73,56 @@
 
       <br>
       <br>
-      <!-- de donde sos? ----------------------->
-      <form class="" action="index.html" method="post">
+      <div class="">
+        <?php if(isset($errores)):?>
+          <ul class="alert alert-danger">
+            <?php foreach ($errores as $value) :?>
+                <li><?=$value;?></li>
+            <?php endforeach;?>
+          </ul>
+        <?php endif;?>
 
-        <p>
-          <label for="nombre">
-            Nombre:
-          </label>
-          <input type="text" required name="nombre" value="" required>
-        </p>
-        <p>
-          <label for="apellido">
-            Apellido:
-          </label>
-          <input type="text" required name="apellido" value="" required>
-        </p>
-        <p>
-          <label for="email">
-            Email:
-          </label>
-          <input type="email" required name="email" value="" required>
-        </p>
-        <p>
-          <label for="userName">
-            Username:
-          </label>
-          <input type="text" required name="userName" value="tomi420" required>
-        </p>
-        <p>
-          <label for="password">
-            Password:
-          </label>
-          <input type="password" required name="password" value="" required>
-        </p>
-        <p>
-          <label for="passwordagain">
-            Password again:
-          </label>
-          <input type="password" required name="passwordagain" value="" required>
-        </p>
-        <button type="button" class="btn btn-success">Crear Cuenta</button>
+        <form class="form" name="formRegistro" action="index1.php" method="POST" enctype="multipart/form-data">
 
-      </form>
-
+          <p>
+            <label for="nombre">
+              Nombre:
+            </label>
+            <input type="text" required name="nombre" value= "<?=isset($errores['nombre'])? "":old('nombre') ;?>" required>
+          </p>
+          <p>
+            <label for="apellido">
+              Apellido:
+            </label>
+            <input type="text" required name="apellido" value= "<?=isset($errores['apellido'])? "":old('apellido') ;?>"  required>
+          </p>
+          <p>
+            <label for="email">
+              Email:
+            </label>
+            <input type="email" required name="email" value= "<?=isset($errores['email'])? "":old('email') ;?>" required>
+          </p>
+          <p>
+            <label for="userName">
+              Username:
+            </label>
+            <input type="text" required name="userName" value= "<?=isset($errores['userName'])? "":old('userName') ;?>" required>
+          </p>
+          <p>
+            <label for="password">
+              Password:
+            </label>
+            <input type="password" required name="password" value= "<?=isset($errores['password'])? "":old('password') ;?>" required>
+          </p>
+          <p>
+            <label for="passwordRepeat">
+              Password again:
+            </label>
+            <input type="password" required name="passwordRepeat" value= "<?=isset($errores['passwordRepeat'])? "":old('passwordRepeat') ;?>" required>
+          </p>
+          <button type="submit" class="btn btn-primary">Crear Cuenta</button>
+        </form>
+      </div>
 
     </main>
 <br>
