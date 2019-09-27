@@ -60,10 +60,11 @@
       <img src="../IMG/perfil.jpg" alt="">
         <p class="lead">Aqui podras encontrar informacion de tu perfil...</p>
         <hr class="my-4">
-        <p>Estas fueron tus ultimas compras.</p>
-        <a class="btn btn-primary btn-lg" href="#" role="button">Ver compras</a> <br>
+
         <p><br>Este es tu carrito de compras, donde podes seleccionar lo que quieras comprar. </p>
-        <a class="btn btn-primary btn-lg" href="carritodecompras.html" role="button"><i class="fas fa-shopping-cart"></i></a>
+        <a class="btn btn-primary btn-lg" href="carritodecompras.php" role="button"><i class="fas fa-shopping-cart"></i></a><br><br>
+        <p>Ya te queres ir!? Acá podes cerrar tu sesión...</p>
+        <a class="btn btn-primary btn-lg" href="logout.php" role="button">Logout</a> <br>
 
     </div>
     <!-- FOOTER con redes y nada mas -->
