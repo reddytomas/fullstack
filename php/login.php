@@ -1,3 +1,36 @@
+<?php
+  require_once('controladores/funciones.php');
+  require_once('helpers.php');
+  if($_POST){
+    $errores = validarLogin($_POST);
+    if(count($errores)==0){
+      $usuario = buscarPorEmail($_POST['email']);
+      if($usuario==null){
+        $errores['email']="Usuario no encontrado...";
+      }else{
+        //Desde aquí incio mi revisión a ver que ocurre con los contenidos de las variables y tratar de ver que ocurre
+        //Aquí ví que el dato viene bien, es decir el password hasheado
+        //dd($usuario['password']);
+        //Ahora veo que trae esta variable  y noto que trae el dato correctamente
+        //dd($_POST['password']);
+        //Aquí estaba el error a la función password_verify, se le debe psar primero el dato no hasheado y luego el hasheado, ese fue mi error, lo habia pasado al contrario
+        if(password_verify($_POST['password'],$usuario['password'])===false){
+          $errores['password']="Datos inválidos...";
+        }else{
+          seteoUsuario($usuario,$_POST);
+          if(validarUsuario()){
+            header('location:perfil.php');
+            exit;
+          }else{
+            header('location:login.php');
+            exit;
+          }
+        }
+      }
+    }
+  }
+
+?>
 <!doctype html>
 <html lang="es">
   <head>
@@ -56,6 +89,13 @@
 
     </header>
     <div><h1 id="caccount" class="_tituloPagina ml-1 mr-1  bg-light text-dark pl-3 mb-3  text-center">Iniciar Sesión</h1></div>
+    <?php if(isset($errores)):?>
+              <ul class="alert alert-danger">
+                <?php foreach ($errores as $value) :?>
+                    <li><?=$value;?></li>
+                <?php endforeach;?>
+              </ul>
+            <?php endif;?>
     <main class="container">
 
       <div class="wrapper fadeInDown">
@@ -68,8 +108,10 @@
       </div>
 
       <!-- Login Form -->
-      <form>
-        <input type="text" id="login" class="fadeIn second" name="login" placeholder="login">
+      <form id="formulario" class="form" name="formLogin" novalidate action="" method="POST" enctype="multipart/form-data">
+        <div class="form-group">
+          <input require name="email" class="form-control" id="email" type="text" id="login" class="fadeIn second" name="login" placeholder="login" value="<?=isset($errores["email"])?"": old("email");?>">
+        </div>
         <input type="text" id="password" class="fadeIn third" name="login" placeholder="password">
         <input type="submit" class="fadeIn fourth" value="Log In">
       </form>
