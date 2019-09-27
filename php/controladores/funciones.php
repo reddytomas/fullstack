@@ -43,6 +43,7 @@ function armarRegistro($datos){
   $usuario = [
     "nombre" => $datos['nombre'],
     "apellido" => $datos['apellido'],
+    "email" => $datos['email'],
     "userName"  => $datos['userName'],
     "password" => password_hash($datos["password"],PASSWORD_DEFAULT),
     "role" => 1

@@ -110,7 +110,7 @@
       <!-- Login Form -->
       <form id="formulario" class="form" name="formLogin" novalidate action="" method="POST" enctype="multipart/form-data">
         <div class="form-group">
-          <input require name="email" class="form-control" id="email" type="text" id="login" class="fadeIn second" name="login" placeholder="login" value="<?=isset($errores["email"])?"": old("email");?>">
+          <input type="email" id="email" class="fadeIn second" name="email" placeholder="email" value="">
         </div>
         <input type="text" id="password" class="fadeIn third" name="password" placeholder="password">
         <input type="submit" class="fadeIn fourth" value="Log In">
