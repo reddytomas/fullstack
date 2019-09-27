@@ -82,13 +82,13 @@
           </ul>
         <?php endif;?>
 
-        <form class="form" name="formRegistro" action="index1.php" method="POST" enctype="multipart/form-data">
+        <form id="formulario" class="form" name="formRegistro" novalidate action=""  method="POST" enctype="multipart/form-data">
 
           <p>
             <label for="nombre">
               Nombre:
             </label>
-            <input type="text" required name="nombre" value= "<?=isset($errores['nombre'])? "":old('nombre') ;?>" required>
+            <input type="text" required name="nombre" value= "<?=isset($errores['nombre'])? "":old('nombre') ;?>" required class="form-control" id="nombre">
           </p>
           <p>
             <label for="apellido">

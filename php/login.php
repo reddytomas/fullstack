@@ -55,7 +55,7 @@
       </nav>
 
     </header>
-    <div><h1 id="caccount" class="_tituloPagina ml-1 mr-1  bg-light text-dark pl-3 mb-3  text-center">Crear una cuenta</h1></div>
+    <div><h1 id="caccount" class="_tituloPagina ml-1 mr-1  bg-light text-dark pl-3 mb-3  text-center">Iniciar Sesión</h1></div>
     <main class="container">
 
       <div class="wrapper fadeInDown">

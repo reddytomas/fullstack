@@ -6,15 +6,15 @@ function validar($datos){
   $errores = [];
   $nombre = trim($datos['nombre']);
   if(empty($nombre)){
-    $errores['nombre']="compleptar nombre";
+    $errores['nombre']="completar nombre";
   }
   $apellido = trim($datos['apellido']);
   if(empty($nombre)){
     $errores['apellido']="compleptar apellido";
   }
-  $userName = trim($datos['username']);
+  $userName = trim($datos['userName']);
   if(empty($userName)){
-    $errores['username']="completar nombre de usuario";
+    $errores['userName']="completar nombre de usuario";
   }
   $email = trim($datos['email']);
   if(!filter_var($email,FILTER_VALIDATE_EMAIL)){
@@ -53,4 +53,77 @@ function armarRegistro($datos){
 function guardarRegistro($registro){
     $archivoJson = json_encode($registro);
     file_put_contents('usuarios.json',$archivoJson.PHP_EOL,FILE_APPEND);
+}
+//Esta funcion está para validar los datos de login.
+function validarLogin($datos){
+  $errores=[];
+  $email = trim($datos['email']);
+    if(!filter_var($email,FILTER_VALIDATE_EMAIL)){
+        $errores['email']="Email inválido...";
+    }
+    $password = trim($datos['password']);
+    if(empty($password)){
+        $errores['password']="El password no puede ser blanco...";
+    }elseif (!is_numeric($password)) {
+        $errores['password']="El password debe ser numérico...";
+    }elseif (strlen($password)<6) {
+        $errores['password']="El password como mínimo debe tener 6 caracteres...";
+    }
+    return $errores;
+}
+//Funcion para buscar si el usuario existe, buscando por email, en la base de datos que es un archivo Json.
+function buscarPorEmail($email){
+    $usuarios = abrirBaseDatos();
+    if($usuarios !=null){
+        foreach ($usuarios as  $usuario) {
+            if($email === $usuario['email']){
+                return $usuario;
+            }
+        }
+    }
+    return null;
+}
+//Esta función abre nuestro archivo json y lo prepara para eliminar el último registro en blanco y además, fijese que además genero el array asociativo del mismo. Convierto de json a array asociativo para mas adelante con la funcion "bucarEmail" poder recorrerlo y verificar si el usuario existe o no en mi base de datos, dicha verificación la hago por el email del usuario, ya que es el dato único que tengo del usuario
+function abrirBaseDatos(){
+    if(file_exists('usuarios.json')){
+        $archivoJson = file_get_contents('usuarios.json');
+        //Aquí lo que hago es generar cada array con un salto de linea, para poderlo ver ejecute aquí un dd($archivoJson)
+        $archivoJson = explode(PHP_EOL,$archivoJson);
+        //Aquí saco el ultimo registro, el cual está en blanco
+        //ejecute aquí un ($archivoJson), la idea es para que verifique como se va armando el archivo
+        array_pop($archivoJson);
+        //ejecute aquí un ($archivoJson), la idea es para que verifique como se va armando el archivo
+
+        //Aquí recorro el array y creo mi array con todos los usuarios
+        foreach ($archivoJson as  $usuarios) {
+            $arrayUsuarios[]= json_decode($usuarios,true);
+        }
+        //Aquí retorno el array de usuarios con todos sus datos
+        return $arrayUsuarios;
+    }else{
+        return null;
+    }
+}
+//Aqui creo los las variables de session y de cookie de mi usuario que se está loguendo
+function seteoUsuario($usuario,$dato){
+    $_SESSION['nombre']=$usuario['nombre'];
+    $_SESSION['apellido']=$usuario['apellido'];
+    $_SESSION['email']=$usuario['email'];
+    $_SESSION['userName']=$usuario['userName'];
+    $_SESSION['role']=$usuario['role'];
+    if(isset($dato['recordarme'])){
+        setcookie('email',$usuario['email'],time()+3600);
+        setcookie('password',$dato['password'],time()+3600);
+    }
+}
+//Con esta función controlo si el usuario se logueo o ya tenemos las cookie en la máquina
+function validarUsuario(){
+    if(isset($_SESSION['email'])){
+        return true;
+    }elseif(isset($_COOKIE['email'])){
+        $_SESSION['email']=$_COOKIE['email'];
+        return true;
+    }else{
+        return false;
+    }
 }
