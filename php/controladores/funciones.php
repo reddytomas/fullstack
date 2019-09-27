@@ -61,7 +61,7 @@ function validarLogin($datos){
     if(!filter_var($email,FILTER_VALIDATE_EMAIL)){
         $errores['email']="Email inválido...";
     }
-    $password = trim($datos['password']);
+  $password = trim($datos['password']);
     if(empty($password)){
         $errores['password']="El password no puede ser blanco...";
     }elseif (!is_numeric($password)) {
