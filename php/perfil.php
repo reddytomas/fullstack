@@ -1,3 +1,7 @@
+<?php
+  require_once('controladores/funciones.php');
+  require_once('helpers.php');
+?>
 <!doctype html>
 <html lang="es">
   <head>
@@ -52,7 +56,7 @@
     </header>
 
     <div class="jumbotron">
-      <h1 class=" _tituloPagina ml-1 mr-1  bg-light text-dark pl-3 mb-3  text-center">Bienvenido a tu Perfil!</h1>
+      <h1 class=" _tituloPagina ml-1 mr-1  bg-light text-dark pl-3 mb-3  text-center">Bienvenido, <?=$_SESSION['nombre'] ;?>!</h1>
       <img src="../IMG/perfil.jpg" alt="">
         <p class="lead">Aqui podras encontrar informacion de tu perfil...</p>
         <hr class="my-4">
