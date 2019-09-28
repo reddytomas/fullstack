@@ -88,7 +88,7 @@
             <label for="nombre">
               Nombre:
             </label>
-            <input type="text" required name="nombre" value= "<?=isset($errores['nombre'])? "":old('nombre') ;?>" required class="form-control" id="nombre">
+            <input type="text" required name="nombre" value= "<?=isset($errores['nombre'])? "":old('nombre') ;?>"  id="nombre">
           </p>
           <p>
             <label for="apellido">
