@@ -59,35 +59,7 @@
 
 <body>
   <div class="container-fluid m-0 p-0">
-    <header>
-      <!-- navbar -------------------------------------->
-      <nav class="navbar navbar-expand-lg navbar-light _ni_navbar mb-5">
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-          </button>
-
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav d-flex justify-content-around">
-          <a href="index1.php"  class="text-dark mr-3" id="_altasllantasfooter">Altas Llantas</a>
-          <a class="nav-item nav-link " href="index1.php">Home <span class="sr-only">(current)</span></a>
-          <a class="nav-item nav-link" href="index1.php#productos">Productos</a>
-          <a class="nav-item nav-link" href="faq.php">FAQ</a>
-          <a class="nav-item nav-link" href="index1.php#contacto">Contacto</a>
-          <a class="nav-item nav-link" href="registrate.php">Registrate</a>
-          <a class="nav-item nav-link" href="login.php">Iniciar sesion</a>
-        </div>
-
-        </div>
-
-        <!-- iniciar, registro o mi perfil ----------------------->
-        <ul class="_perfilList">
-          <a class="nav-item nav-link"href="perfil.php" id="iniciar"><li><i class="fas fa-user-circle fa-2x"></i></li></a>
-          <a class="btn btn-primary btn-lg" href="carritodecompras.php" role="button"><li><i class="fas fa-shopping-cart"></i></li></a>
-
-        </ul>
-      </nav>
-
-    </header>
+    <?php require_once 'parciales/header.php'; ?>
     <div><h1 id="caccount" class="_tituloPagina ml-1 mr-1  bg-light text-dark pl-3 mb-3  text-center">Iniciar Sesión</h1></div>
 
     <main class="container">
@@ -128,16 +100,7 @@
     </main>
 <br>
 <!-- FOOTER con redes y nada mas -->
-<footer class="bg-light w-100">
-  <p class="text-center" id="_altasllantasfooter">Altas Llantas</p>
-  <ul class="list-unstyled list-group-horizontal d-flex justify-content-around ">
-    <li><a href=""><i class="fab fa-instagram fa-2x "></i></a></li>
-    <li><a href=""><i class="fab fa-facebook-square fa-2x"></i></a></li>
-    <li><a href=""><i class="fab fa-twitter-square fa-2x"></i></a></li>
-  </ul>
-  <div class="text-center text-dark"><a href="#" class="">Volver arriba</a></div>
-
-</footer>
+<?php require_once 'parciales/footer.php'; ?>
 
 
 
