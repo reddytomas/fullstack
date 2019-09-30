@@ -206,7 +206,7 @@
     </section >
 
     <!-- CONTACTO  y maps----------------------------->
-    <section class="_contacto row p-3" id="contacto">
+    <section class="_contacto row p-3 mr-0 ml-1" id="contacto">
       <article class="col-sm-12 col-md-6" id="_contactarprimera">
         <form>
           <h5 id="contactanos"class="_contactanosheader font-weight-bold">Contactanos</h5>
