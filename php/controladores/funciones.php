@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-function validar($datos){
+function validar($datos,$imagen){
 
   $errores = [];
   $nombre = trim($datos['nombre']);
@@ -35,17 +35,29 @@ function validar($datos){
       $errores['passwordRepeat']="Las contraseñas deben ser iguales";
   }
 
+  if(isset($_FILES)){
+      $nombre = $imagen['avatar']['name'];
+      $ext = pathinfo($nombre,PATHINFO_EXTENSION);
+      if($imagen['avatar']['error']!=0){
+          $errores['avatar']="elegir Avatar";
+
+      }elseif ($ext != "jpg" && $ext != "png") {
+          $errores['avatar']="Formato inválido";
+      }
+  }
+
   return $errores;
 
 }
 
-function armarRegistro($datos){
+function armarRegistro($datos,$avatar){
   $usuario = [
     "nombre" => $datos['nombre'],
     "apellido" => $datos['apellido'],
     "email" => $datos['email'],
     "userName"  => $datos['userName'],
     "password" => password_hash($datos["password"],PASSWORD_DEFAULT),
+    'avatar'=> $avatar,
     "role" => 1
   ];
   return $usuario;
@@ -54,6 +66,21 @@ function armarRegistro($datos){
 function guardarRegistro($registro){
     $archivoJson = json_encode($registro);
     file_put_contents('usuarios.json',$archivoJson.PHP_EOL,FILE_APPEND);
+}
+//armado de avatar//
+function armarAvatar($imagen){
+    $nombre = $imagen['avatar']['name'];
+    $ext = pathinfo($nombre, PATHINFO_EXTENSION);
+    $archivoOrigen = $imagen['avatar']['tmp_name'];
+    $archivoDestino = dirname(__DIR__);
+    $archivoDestino = $archivoDestino . "/imagenes/";
+    $avatar = uniqid();
+    $archivoDestino = $archivoDestino.$avatar.".".$ext;
+    //Aquí estoy copiando al servidor nuestro archivo destino creado
+    move_uploaded_file($archivoOrigen, $archivoDestino);
+    //Aquí estoy retornando al usuario sólo la imagen, la cual será guardada en el archivo json
+    $avatar = $avatar.".".$ext;
+    return $avatar;
 }
 //Esta funcion está para validar los datos de login.
 function validarLogin($datos){
@@ -106,16 +133,15 @@ function abrirBaseDatos(){
     }
 }
 //Aqui creo los las variables de session y de cookie de mi usuario que se está loguendo
-function seteoUsuario($usuario,$dato){
+function seteoUsuario($usuario){
     $_SESSION['nombre']=$usuario['nombre'];
     $_SESSION['apellido']=$usuario['apellido'];
     $_SESSION['email']=$usuario['email'];
     $_SESSION['userName']=$usuario['userName'];
     $_SESSION['role']=$usuario['role'];
-    if(isset($dato['recordarme'])){
+    $_SESSION['avatar']= $usuario['avatar'];
         setcookie('email',$usuario['email'],time()+3600);
-        setcookie('password',$dato['password'],time()+3600);
-    }
+        //setcookie('password',$dato['password'],time()+3600);
 }
 //Con esta función controlo si el usuario se logueo o ya tenemos las cookie en la máquina
 function validarUsuario(){

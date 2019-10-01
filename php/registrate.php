@@ -4,12 +4,11 @@
   require_once("helpers.php");
   if($_POST){
 
-    $errores = validar($_POST);
+    $errores = validar($_POST,$_FILES);
    if(count($errores)==0){
-     $registro = armarRegistro($_POST);
+     $avatar = armarAvatar($_FILES);
+     $registro = armarRegistro($_POST,$avatar);
      guardarRegistro($registro);
-
-
      header("location:login.php");
    }
   }
@@ -91,6 +90,12 @@
               Password again:
             </label>
             <input type="password" required name="passwordRepeat" value= "<?=isset($errores['passwordRepeat'])? "":old('passwordRepeat') ;?>" required>
+          </p>
+          <p>
+            <label for="avatar">
+              Avatar:
+            </label>
+            <input required name="avatar" type="file" value="" id="avatar" >
           </p>
           <button type="submit" class="btn btn-primary">Crear Cuenta</button>
         </form>

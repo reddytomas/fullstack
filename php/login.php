@@ -1,12 +1,13 @@
 <?php
   require_once('controladores/funciones.php');
   require_once('helpers.php');
+
   if($_POST){
     $errores = validarLogin($_POST);
     if(count($errores)==0){
       $usuario = buscarPorEmail($_POST['email']);
       if($usuario==null){
-        $errores['email']="Usuario no encontrado...";
+        $errores['email'] = "Usuario no encontrado...";
       }else{
         //Desde aquí incio mi revisión a ver que ocurre con los contenidos de las variables y tratar de ver que ocurre
         //Aquí ví que el dato viene bien, es decir el password hasheado
@@ -14,10 +15,11 @@
         //Ahora veo que trae esta variable  y noto que trae el dato correctamente
         //dd($_POST['password']);
         //Aquí estaba el error a la función password_verify, se le debe psar primero el dato no hasheado y luego el hasheado, ese fue mi error, lo habia pasado al contrario
-        if(password_verify($_POST['password'],$usuario['password'])===false){
+        if(password_verify($_POST['password'], $usuario['password'])===false){
           $errores['password']="Datos inválidos...";
         }else{
-          seteoUsuario($usuario,$_POST);
+          seteoUsuario($usuario);
+
           if(validarUsuario()){
             header('location:perfil.php');
             exit;

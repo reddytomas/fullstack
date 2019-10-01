@@ -1,6 +1,13 @@
 <?php
   require_once('controladores/funciones.php');
   require_once('helpers.php');
+
+  if(!isset($_SESSION["email"])) {
+    header("location:registro.php");
+    exit;
+  }
+
+
 ?>
 <!doctype html>
 <html lang="es">
@@ -26,11 +33,11 @@
 <body>
   <div class="container-fluid m-0 p-0">
     <?php require_once 'parciales/header.php'; ?>
+    <img class="rounded-circle w-50" src="imagenes/<?=$_SESSION['avatar'];?>" alt="avatar">
 
     <div class="jumbotron">
 
       <h1 class=" _tituloPagina ml-1 mr-1  bg-light text-dark pl-3 mb-3  text-center">Bienvenido, <?=$_SESSION['nombre'] ;?>!</h1>
-      <img src="../IMG/perfil.jpg" alt="">
         <p class="lead">Aqui podras encontrar informacion de tu perfil...</p>
         <hr class="my-4">
 
