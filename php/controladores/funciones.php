@@ -133,16 +133,17 @@ function abrirBaseDatos(){
     }
 }
 //Aqui creo los las variables de session y de cookie de mi usuario que se está loguendo
-function seteoUsuario($usuario){
+function seteoUsuario($usuario, $dato){
     $_SESSION['nombre']=$usuario['nombre'];
     $_SESSION['apellido']=$usuario['apellido'];
     $_SESSION['email']=$usuario['email'];
-    $_SESSION['userName']=$usuario['userName'];
     $_SESSION['role']=$usuario['role'];
     $_SESSION['avatar']= $usuario['avatar'];
-        setcookie('email',$usuario['email'],time()+3600);
-        //setcookie('password',$dato['password'],time()+3600);
-}
+    if(isset($dato['recordarme'])) {
+    setcookie('email',$usuario['email'],time()+3600);
+    setcookie('password',$dato['password'],time()+3600);
+    }
+  }
 //Con esta función controlo si el usuario se logueo o ya tenemos las cookie en la máquina
 function validarUsuario(){
     if(isset($_SESSION['email'])){

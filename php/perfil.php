@@ -27,24 +27,36 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css">
 
     <link rel="stylesheet" href="../css/perfil.css">
-    <title>Carrito</title>
+    <title>Perfil</title>
   </head>
 
 <body>
   <div class="container-fluid m-0 p-0">
     <?php require_once 'parciales/header.php'; ?>
-    <img class="rounded-circle w-50" src="imagenes/<?=$_SESSION['avatar'];?>" alt="avatar">
+
 
     <div class="jumbotron">
 
       <h1 class=" _tituloPagina ml-1 mr-1  bg-light text-dark pl-3 mb-3  text-center">Bienvenido, <?=$_SESSION['nombre'] ;?>!</h1>
-        <p class="lead">Aqui podras encontrar informacion de tu perfil...</p>
-        <hr class="my-4">
+        <div class="perfil row">
+          <div class="col-sm-12 col-md-5 ">
+            <div class="mb-3 text-center text-md-left  "><img class="w-md-auto " src="imagenes/<?=$_SESSION['avatar'];?>" alt="avatar"></div>
+            <ul class="pl-0 w-auto text-center text-md-left datosPersonales">
+              <li class="list-group-item"><?=$_SESSION['nombre'] ;?> <?=$_SESSION['apellido'];?> </li>
+              <li class="list-group-item"><?=$_SESSION['email'];?></li>
+            </ul>
+          </div>
+          <div class="col-sm-12 col-md-7 mt-5">
+            <p>Este es tu carrito de compras, donde podes seleccionar lo que quieras comprar. </p>
+            <a class="btn btn-primary btn-lg" href="carritodecompras.php" role="button">Ir al Carrito <i class="fas fa-shopping-cart"></i></a><br><br>
+            <hr>
+            <p>Ya te queres ir!? Acá podes cerrar tu sesión...</p>
+            <a class="btn btn-primary btn-lg" href="logout.php" role="button">Logout</a> <br>
 
-        <p><br>Este es tu carrito de compras, donde podes seleccionar lo que quieras comprar. </p>
-        <a class="btn btn-primary btn-lg" href="carritodecompras.php" role="button"><i class="fas fa-shopping-cart"></i></a><br><br>
-        <p>Ya te queres ir!? Acá podes cerrar tu sesión...</p>
-        <a class="btn btn-primary btn-lg" href="logout.php" role="button">Logout</a> <br>
+          </div>
+        </div>
+
+
 
     </div>
     <!-- FOOTER con redes y nada mas -->

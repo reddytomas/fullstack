@@ -18,7 +18,7 @@
         if(password_verify($_POST['password'], $usuario['password'])===false){
           $errores['password']="Datos inválidos...";
         }else{
-          seteoUsuario($usuario);
+          seteoUsuario($usuario, $_POST);
 
           if(validarUsuario()){
             header('location:perfil.php');
@@ -84,15 +84,25 @@
       <!-- Login Form -->
       <form id="formulario" class="form" name="formLogin" novalidate action="" method="POST" enctype="multipart/form-data">
         <div class="form-group">
-          <input type="email" id="email" class="fadeIn second" name="email" placeholder="email" value="">
+          <input type="email" id="email" class="fadeIn second" name="email" placeholder=" email" value="">
         </div>
-        <input type="password" id="password" class="fadeIn third" name="password" placeholder="password">
-        <input type="submit" class="fadeIn fourth" value="Log In">
+        <div class="">
+          <input type="password" id="password" class="fadeIn third" name="password" placeholder=" password">
+        </div>
+        <div class="">
+          <input type="submit" class="fadeIn fourth" value="Log In"> <br>
+        </div>
+        <div class="form-group">
+          <input  class="text-left" name="recordarme" type="checkbox" value= "recordarme" class="form-control " id="recordarme" >
+          <label for="recordarme">Recordarme</label>
+        </div>
       </form>
+
 
       <!-- Remind Passowrd -->
       <div id="formFooter">
-        <a class="underlineHover" href="#">Forgot Password?</a>
+        <a class="underlineHover" href="#">Forgot Password?</a> <br>
+        <a class="underlineHover" href="registrate.php">Registrate</a>
       </div>
 
     </div>
